@@ -3,6 +3,7 @@ const helmet = require("helmet")
 /*const cors = require("cors");*/
 
 const app = express();
+const { version } = require("./package.json")
 
 app.use(helmet());
 
@@ -28,5 +29,5 @@ require("./app/routes/tutorial.routes.js")(app);
 // set port, listen for requests
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}.`);
+  console.log(`app started: ${version}, Server is running on port ${PORT}.`);
 });
