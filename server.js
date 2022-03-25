@@ -1,7 +1,10 @@
 const express = require("express");
+const helmet = require("helmet")
 /*const cors = require("cors");*/
 
 const app = express();
+
+app.use(helmet());
 
 /*var corsOptions = {
   origin: "http://localhost:8081"
