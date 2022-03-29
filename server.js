@@ -1,13 +1,17 @@
 const express = require("express");
-const cors = require("cors");
+const helmet = require("helmet")
+/*const cors = require("cors");*/
 
 const app = express();
+const { version } = require("./package.json")
 
-var corsOptions = {
+app.use(helmet());
+
+/*var corsOptions = {
   origin: "http://localhost:8081"
-};
+};*/
 
-app.use(cors(corsOptions));
+/*app.use(cors(corsOptions));*/
 
 // parse requests of content-type - application/json
 app.use(express.json()); 
@@ -23,7 +27,7 @@ app.get("/", (req, res) => {
 require("./app/routes/tutorial.routes.js")(app);
 
 // set port, listen for requests
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}.`);
+  console.log(`app started: ${version}, Server is running on port ${PORT}.`);
 });
