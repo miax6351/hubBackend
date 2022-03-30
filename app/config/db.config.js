@@ -1,5 +1,5 @@
 module.exports = {
-  HOST: "diplom-e18",
+  HOST: "localhost",
   USER: "gruppe09",
   PASSWORD: "gruppe09",
   DB: "studenthub"
