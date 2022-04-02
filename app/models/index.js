@@ -45,13 +45,5 @@ Object.keys(db).forEach(modelName => {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
-//db.announcements = require('./announcements.js')(sequelize, Sequelize);
-
-/*db.sequelize.sync({force: false}).then(() => {
- console.log("yes, sync works");
-})*/
-
-
-
 module.exports = db;
 

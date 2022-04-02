@@ -9,8 +9,6 @@ var corsOptions = {
     origin: 'http://localhost:8081'
   };
 
-//models.sequelize.sync({force: false});
-
 models.sequelize.sync({force: false}).then(() => {
     console.log("yes, sync works");
    })
