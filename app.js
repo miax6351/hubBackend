@@ -1,20 +1,15 @@
 //const helmet = require("helmet");
 const models = require("./app/models");
 const express = require("express");
-const cors = require("cors");
+
 
 const app = express();
-
-var corsOptions = {
-    origin: 'http://localhost:8081'
-  };
 
 models.sequelize.sync({force: false}).then(() => {
     console.log("yes, sync works");
    })
 
 //middelware
-app.use(cors(corsOptions));
 
 app.use(express.json());
 

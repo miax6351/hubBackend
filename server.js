@@ -1,8 +1,8 @@
 
 const app = require("./app");
 const { version } = require("./package.json");
-const express = require("express");
-const cors = require("cors");
+
+
 
 
 
