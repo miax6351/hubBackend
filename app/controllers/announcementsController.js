@@ -1,9 +1,19 @@
-    const { sequelize } = require("../models");
-    const db = require("../models")
-    const Announcement = db.announcements;
-    const Op = db.Sequelize.Op;
+const model = require("../models")
+    
 
-    exports.findAll = (req, res) => {
+    
+    const getAllAnnouncements = async (reg, res) => {
+        
+        let announcements = await model.announcement.findAll({});
+        res.status(200).send(announcements);
+    }
+
+    module.exports = {
+        getAllAnnouncements
+    }
+    
+
+    /*exports.findAll = (req, res) => {
         const id = req.query.id;
         var condition = id ? { id: { [Op.like]: `%${id}%` } } : null;
         Announcement.findAll({ where: condition })
@@ -16,13 +26,7 @@
                 err.message || "Some error occurred while retrieving announcements."
             });
           });
-    };
-
-    /*sequelize.query("SELECT * FROM `announcements`", { type: sequelize.QueryTypes.SELECT})
-    .then(function(announcement) {
-      // We don't need spread here, since only the results will be returned for select queries
-      console.log(announcement)
-    })*/
+    };*/
 
 
     /*module.exports = async (reg, res) => {

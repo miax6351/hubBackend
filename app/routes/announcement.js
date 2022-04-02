@@ -1,6 +1,8 @@
+const announcementController = require("../controllers/announcementsController");
 const router = require("express").Router();
 
-router.get("/api/announcement", require("../controllers/announcementsController").findAll);
+
+router.get('/', announcementController.getAllAnnouncements);
 
 
 module.exports = router;

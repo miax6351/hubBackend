@@ -1,7 +1,7 @@
+module.exports = (sequelize, Datatypes) => {
 
-module.exports = (sequelize, Sequelize) => {
     const Announcement = sequelize.define("announcement", {
-      id: { type: Sequelize.INTEGER, allowNull: false, primaryKey: true }
+      id: { type: Datatypes.INTEGER, allowNull: false, primaryKey: true }
     },
     {
         tableName: "announcements",
@@ -11,3 +11,4 @@ module.exports = (sequelize, Sequelize) => {
 
     return Announcement;
   };
+

@@ -1,19 +1,34 @@
-const app = require("express")();
-const helmet = require("helmet");
-const db = require("./app/models");
+//const helmet = require("helmet");
+const models = require("./app/models");
 const express = require("express");
+const cors = require("cors");
 
+const app = express();
 
-db.sequelize.sync();
+var corsOptions = {
+    origin: 'http://localhost:8081'
+  };
 
-// parse requests of content-type - application/json
-//app.use(express.json()); 
+//models.sequelize.sync({force: false});
 
-// parse requests of content-type - application/x-www-form-urlencoded
-//app.use(express.urlencoded({ extended: true }));
+models.sequelize.sync({force: false}).then(() => {
+    console.log("yes, sync works");
+   })
 
-app.use(helmet());
+//middelware
+app.use(cors(corsOptions));
 
-app.use("/api/announcement", require("./app/routes/announcement"));
+app.use(express.json());
+
+app.use(express.urlencoded({ extended: true}));
+
+app.get('/', (req, res) => {
+  res.json({ message: "Welcome to StudentHub" });
+});
+
+//app.use(helmet());
+
+app.use("/api/announcements", require("./app/routes/announcement"));
+
 
 module.exports = app;
