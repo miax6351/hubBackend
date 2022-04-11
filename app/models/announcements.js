@@ -4,7 +4,7 @@ module.exports = (sequelize, Datatypes) => {
       id: { type: Datatypes.INTEGER, allowNull: false, primaryKey: true }
     },
     {
-        tableName: "announcements",
+        tableName: "announcement",
         frezeTableName: true,
         timestamps: false
     });
