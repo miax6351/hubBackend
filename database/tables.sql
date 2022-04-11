@@ -114,3 +114,16 @@ CREATE TABLE appointment (
   FOREIGN KEY (studentId) REFERENCES student (id),
   FOREIGN KEY (courseId) REFERENCES lesson (courseId)
 ) ENGINE=MyISAM;
+
+CREATE TABLE lessonplan (
+  studentId varchar(255),
+  course varchar(255),
+  weekNo int,
+  date date,
+  topic varchar(255),
+  learningObjectives varchar(255),
+  litterature varchar(255),
+  pages int,
+  PRIMARY KEY (studentId, course, weekNo),
+  FOREIGN KEY (studentId) REFERENCES student (id)
+);
