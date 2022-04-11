@@ -56,3 +56,6 @@ INSERT INTO announcement VALUES ('s205339', null, 'Hegnet har fødselsdag!!', '*
 INSERT INTO appointment VALUES ('s205353', null, CURDATE(), CURDATE(),'Dentists appointment',  null);
 INSERT INTO appointment VALUES ('s205353', null, CURDATE(), CURDATE(),'Backend Development', '010101');
 INSERT INTO appointment VALUES ('s205339', null, CURDATE(), CURDATE(),'Backend Development', '010101');
+
+
+INSERT INTO lessonplan VALUES ('s205353', 'Frontend Development', 1, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);

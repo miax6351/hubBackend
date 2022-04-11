@@ -1,10 +1,5 @@
-
 const app = require("./app");
 const { version } = require("./package.json");
-
-
-
-
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080
