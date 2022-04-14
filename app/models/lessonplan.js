@@ -17,6 +17,7 @@ module.exports = (sequelize, Datatypes) => {
         timestamps: false
     });
 
+    LessonPlan.sync();
     return LessonPlan;
   };
 
