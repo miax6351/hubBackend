@@ -1,13 +1,25 @@
+module.exports = (sequelize, Datatypes) => {
 
-module.exports = (sequelize, Sequelize) => {
     const Announcement = sequelize.define("announcement", {
-      id: { type: Sequelize.INTEGER, allowNull: false, primaryKey: true }
+      studentId: {type: Datatypes.STRING, allowNull: false, primaryKey: true },
+      id: { type: Datatypes.INTEGER, allowNull: false, primaryKey: true },
+      title: { type: Datatypes.STRING },
+      message: { type: Datatypes.TEXT },
+      sender: { type: Datatypes.STRING},
+      //course: { type: Datatypes.STRING }
+      isRead: { type: Datatypes.BOOLEAN },
+      //time: { type: Datatypes.DATE } 
     },
     {
-        tableName: "announcements",
+        tableName: "announcement",
         frezeTableName: true,
         timestamps: false
     });
 
+    /*Announcement.associate = function (models) {
+      models.announcement.belongTo()
+    }*/
+
     return Announcement;
   };
+

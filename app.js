@@ -1,19 +1,35 @@
-const app = require("express")();
-const helmet = require("helmet");
-const db = require("./app/models");
+//const helmet = require("helmet");
+const models = require("./app/models");
 const express = require("express");
 
 
-db.sequelize.sync();
 
-// parse requests of content-type - application/json
-//app.use(express.json()); 
+const app = express();
 
-// parse requests of content-type - application/x-www-form-urlencoded
-//app.use(express.urlencoded({ extended: true }));
+models.sequelize.sync({force: false}).then(() => {
+    console.log("yes, sync works");
+   })
 
-app.use(helmet());
+//middelware
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+  next();
+}) 
+
+app.use(express.json());
+
+app.use(express.urlencoded({ extended: true}));
+
+app.get('/', (req, res) => {
+  res.json({ message: "Welcome to StudentHub" });
+});
+
+//app.use(helmet());
 
 app.use("/api/announcement", require("./app/routes/announcement"));
+
+
 
 module.exports = app;
