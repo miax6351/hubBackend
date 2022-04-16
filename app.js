@@ -28,7 +28,9 @@ app.get('/', (req, res) => {
 
 //app.use(helmet());
 
-app.use("/api/announcement", require("./app/routes/announcement"));
+app.use("/api/announcements", require("./app/routes/announcement"));
+app.use("/api/lessonplan", require("./app/routes/lessonplan"));
+
 
 
 

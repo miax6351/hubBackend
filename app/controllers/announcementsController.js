@@ -3,7 +3,6 @@ const model = require("../models")
 
     
     const getAllAnnouncements = async (reg, res) => {
-        
         let announcements = await model.announcement.findAll({where: {}});
         res.status(200).send(announcements);
     }

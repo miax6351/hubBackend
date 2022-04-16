@@ -1,0 +1,22 @@
+module.exports = (sequelize, Datatypes) => {
+
+    const LessonPlan = sequelize.define("lessonplan", {
+      studentId: { type: Datatypes.STRING, allowNull: false, primaryKey: true },
+      course: { type: Datatypes.STRING, allowNull: false, primaryKey: true },
+      weekNo: { type: Datatypes.INTEGER, allowNull: false, primaryKey: true },
+      date: { type: Datatypes.DATE },
+      topic: { type: Datatypes.STRING},
+      learningObjectives: { type: Datatypes.STRING},
+      litterature: { type: Datatypes.STRING },
+      pages: { type: Datatypes.INTEGER },
+      
+    },
+    {
+        tableName: "lessonplan",
+        frezeTableName: true,
+        timestamps: false
+    });
+
+    return LessonPlan;
+  };
+
