@@ -13,6 +13,12 @@ module.exports = (sequelize, Datatypes) => {
         timestamps: false
     });
 
+    Course.associate = function(models){
+      models.course.hasMany(models.assignment)
+      models.course.hasOne(models.instructor)
+      models.course.hasMany(models.lesson)
+  }
+
     return Course;
   };
 

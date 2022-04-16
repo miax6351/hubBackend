@@ -17,7 +17,12 @@ module.exports = (sequelize, Datatypes) => {
         timestamps: false
     });
 
-    LessonPlan.sync();
+    LessonPlan.associate = function(models){
+      models.lessonplan.belongsTo(models.student)
+    }
+    
     return LessonPlan;
   };
+
+  
 
