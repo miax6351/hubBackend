@@ -1,13 +1,15 @@
+module.exports = (sequelize, Datatypes) => {
 
-module.exports = (sequelize, Sequelize) => {
     const Announcement = sequelize.define("announcement", {
-      id: { type: Sequelize.INTEGER, allowNull: false, primaryKey: true }
+      studentId: { type: Datatypes.STRING, allowNull: false, primaryKey: true },
+      id: { type: Datatypes.INTEGER, allowNull: false, primaryKey: true }
     },
     {
-        tableName: "announcements",
+        tableName: "announcement",
         frezeTableName: true,
         timestamps: false
     });
 
     return Announcement;
   };
+
