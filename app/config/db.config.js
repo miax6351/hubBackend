@@ -2,8 +2,8 @@ module.exports = {
   HOST: "localhost",
   USER: "gruppe09",
   PASSWORD: "gruppe09",
-  DB: "studenthub",
-  DIALECT: "mariadb"
+  DB: "studenthub"
+  //DIALECT: "mariadb"
   //PORT: 3306,
   /*pool: {
     max: 5,
