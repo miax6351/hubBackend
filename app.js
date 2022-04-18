@@ -1,6 +1,8 @@
 //const helmet = require("helmet");
 const models = require("./app/models");
 const express = require("express");
+const cors = require("cors");
+
 
 
 
@@ -11,6 +13,7 @@ models.sequelize.sync({force: false}).then(() => {
    })
 
 //middelware
+app.use(cors())
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
@@ -27,13 +30,18 @@ app.get('/', (req, res) => {
 });
 
 //app.use(helmet());
-
+//announcements
 app.use("/api/announcements", require("./app/routes/announcement"));
+//lessonplan
 app.use("/api/lessonplan", require("./app/routes/lessonplan"));
 app.use("/api/lessonplan/postLessonplanRow", require("./app/routes/lessonplan"));
+//appointment
 app.use("/api/appointment", require("./app/routes/appointment"));
 app.use("/api/appointment/postAppointment", require("./app/routes/appointment"));
+//courseDatabase
 app.use("/api/courseDatabase", require("./app/routes/course"));
+//student
+app.use("/api/student", require("./app/routes/student"));
 
 
 module.exports = app;

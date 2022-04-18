@@ -7,9 +7,7 @@ module.exports = (sequelize, Datatypes) => {
       title: { type: Datatypes.STRING },
       message: { type: Datatypes.TEXT },
       sender: { type: Datatypes.STRING},
-      //course: { type: Datatypes.STRING }
-      isRead: { type: Datatypes.BOOLEAN },
-      //time: { type: Datatypes.DATE } 
+      isRead: { type: Datatypes.BOOLEAN }
 
     },
     {
@@ -18,9 +16,9 @@ module.exports = (sequelize, Datatypes) => {
         timestamps: false
     });
 
-    /*Announcement.associate = function (models) {
-      models.announcement.belongTo()
-    }*/
+    Announcement.associate = function (models) {
+      models.announcement.belongsTo(models.student)
+    }
 
     return Announcement;
   };

@@ -14,6 +14,8 @@ router.put('/update/:id', announcementController.updateRead);
 
 
 
+
+
 module.exports = router;
 
 
