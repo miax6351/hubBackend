@@ -29,13 +29,6 @@ app.get('/', (req, res) => {
   res.json({ message: "Welcome to StudentHub" });
 });
 
-app.get('/*', function(req, res) {   
-  res.sendFile(path.join(__dirname, '/var/www/studenthub.bhsi.xyz/index.html'), function(err) {
-    if (err) {
-      res.status(500).send(err)
-    }
-  })
-})
 
 //app.use(helmet());
 //announcements
