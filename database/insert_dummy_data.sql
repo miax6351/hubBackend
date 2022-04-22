@@ -10,8 +10,14 @@ INSERT INTO student VALUES ('s205456', 'Steven', 'Pedersen', 's205456@student.dt
 INSERT INTO instructor VALUES ('bhsi', 'Bhupjit', 'Sing', 'bhsi@dtu.dk', 25252525);
 
 /*course*/
-INSERT INTO course VALUES ('010101', 'Backend Development', 'Best course ever', 5, 'bhsi');
-INSERT INTO course VALUES ('11112', 'UML', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
+INSERT INTO course VALUES ('62597', 'Backend development, operations and distributed Systems', 'Best course ever', 5, 'bhsi');
+INSERT INTO course VALUES ('62531', 'Development Methods for IT Systems', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
+INSERT INTO course VALUES ('02223', 'Model-Based Systems Engineering', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
+INSERT INTO course VALUES ('02160', 'Agile Object-oriented Software Development', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
+INSERT INTO course VALUES ('02369', 'Software Processes and Patterns
+', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
+INSERT INTO course VALUES ('62T34', 'IT Project Management
+', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
 
 /*grades & grade*/
 
