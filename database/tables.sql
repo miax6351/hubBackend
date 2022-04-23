@@ -16,9 +16,9 @@ CREATE TABLE instructor (
 
 
 CREATE TABLE course (
-  id int PRIMARY KEY,
+  id varchar(10) PRIMARY KEY,
   courseName varchar(25),
-  courseDescription varchar(25),
+  courseDescription varchar(100)),
   ects varchar(25),
   instructorId varchar(25),
   FOREIGN KEY (instructorId) REFERENCES instructor (id)

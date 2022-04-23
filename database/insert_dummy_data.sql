@@ -13,11 +13,19 @@ INSERT INTO instructor VALUES ('bhsi', 'Bhupjit', 'Sing', 'bhsi@dtu.dk', 2525252
 INSERT INTO course VALUES ('62597', 'Backend development, operations and distributed Systems', 'Best course ever', 5, 'bhsi');
 INSERT INTO course VALUES ('62531', 'Development Methods for IT Systems', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
 INSERT INTO course VALUES ('02223', 'Model-Based Systems Engineering', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
-INSERT INTO course VALUES ('02160', 'Agile Object-oriented Software Development', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
+INSERT INTO course VALUES ('02160', 'Agile Object-oriented Software Development', 'Learning objective: to make diagrams with UML notation', 5, 'drgb');
 INSERT INTO course VALUES ('02369', 'Software Processes and Patterns
 ', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
 INSERT INTO course VALUES ('62T34', 'IT Project Management
 ', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
+INSERT INTO course VALUES ('00000', 'Backend development, operations and distributed Systems', 'Best course ever', 5, 'abcd');
+INSERT INTO course VALUES ('00000', 'Development Methods for IT Systems', 'Learning objective: to make diagrams with UML notation', 5, 'abcd');
+INSERT INTO course VALUES ('00000', 'Model-Based Systems Engineering', 'Learning objective: to make diagrams with UML notation', 5, 'abcd');
+INSERT INTO course VALUES ('00000', 'Agile Object-oriented Software Development', 'Learning objective: to make diagrams with UML notation', 5, 'opqr');
+INSERT INTO course VALUES ('00000', 'Software Processes and Patterns
+', 'Learning objective: to make diagrams with UML notation', 5, 'opqr');
+INSERT INTO course VALUES ('00000', 'IT Project Management
+', 'Learning objective: to make diagrams with UML notation', 5, 'opqr');
 
 /*grades & grade*/
 
