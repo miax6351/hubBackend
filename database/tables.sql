@@ -31,8 +31,8 @@ CREATE TABLE grades (
 
 CREATE TABLE grade (
   studentId varchar(25),
-  gradeDK int,
   courseId int,
+  gradeDK int,
   PRIMARY KEY (studentId, gradeDK, courseId),
   FOREIGN KEY (studentId) REFERENCES student(id),
   FOREIGN KEY (gradeDK) REFERENCES grades (gradeDK),
