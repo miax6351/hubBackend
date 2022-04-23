@@ -1,4 +1,4 @@
-//const helmet = require("helmet");
+const helmet = require("helmet");
 const models = require("./app/models");
 const express = require("express");
 const cors = require("cors");
@@ -20,6 +20,8 @@ app.use((req, res, next) => {
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
   next();
 }) 
+
+app.use(helmet());
 
 app.use(express.json());
 
