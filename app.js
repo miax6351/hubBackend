@@ -1,4 +1,4 @@
-//const helmet = require("helmet");
+const helmet = require("helmet");
 const models = require("./app/models");
 const express = require("express");
 const cors = require("cors");
@@ -21,6 +21,8 @@ app.use((req, res, next) => {
   next();
 }) 
 
+app.use(helmet());
+
 app.use(express.json());
 
 app.use(express.urlencoded({ extended: true}));
@@ -28,6 +30,7 @@ app.use(express.urlencoded({ extended: true}));
 app.get('/', (req, res) => {
   res.json({ message: "Welcome to StudentHub" });
 });
+
 
 //app.use(helmet());
 //announcements
@@ -42,6 +45,7 @@ app.use("/api/appointment/postAppointment", require("./app/routes/appointment"))
 app.use("/api/courseDatabase", require("./app/routes/course"));
 //student
 app.use("/api/student", require("./app/routes/student"));
-
+//grades
+app.use("/api/grades", require("./app/routes/grade"));
 
 module.exports = app;

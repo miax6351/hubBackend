@@ -10,8 +10,22 @@ INSERT INTO student VALUES ('s205456', 'Steven', 'Pedersen', 's205456@student.dt
 INSERT INTO instructor VALUES ('bhsi', 'Bhupjit', 'Sing', 'bhsi@dtu.dk', 25252525);
 
 /*course*/
-INSERT INTO course VALUES ('010101', 'Backend Development', 'Best course ever', 5, 'bhsi');
-INSERT INTO course VALUES ('11112', 'UML', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
+INSERT INTO course VALUES ('62597', 'Backend development, operations and distributed Systems', 'Best course ever', 5, 'bhsi');
+INSERT INTO course VALUES ('62531', 'Development Methods for IT Systems', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
+INSERT INTO course VALUES ('02223', 'Model-Based Systems Engineering', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
+INSERT INTO course VALUES ('02160', 'Agile Object-oriented Software Development', 'Learning objective: to make diagrams with UML notation', 5, 'drgb');
+INSERT INTO course VALUES ('02369', 'Software Processes and Patterns
+', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
+INSERT INTO course VALUES ('62T34', 'IT Project Management
+', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
+INSERT INTO course VALUES ('00000', 'Backend development, operations and distributed Systems', 'Best course ever', 5, 'abcd');
+INSERT INTO course VALUES ('00000', 'Development Methods for IT Systems', 'Learning objective: to make diagrams with UML notation', 5, 'abcd');
+INSERT INTO course VALUES ('00000', 'Model-Based Systems Engineering', 'Learning objective: to make diagrams with UML notation', 5, 'abcd');
+INSERT INTO course VALUES ('00000', 'Agile Object-oriented Software Development', 'Learning objective: to make diagrams with UML notation', 5, 'opqr');
+INSERT INTO course VALUES ('00000', 'Software Processes and Patterns
+', 'Learning objective: to make diagrams with UML notation', 5, 'opqr');
+INSERT INTO course VALUES ('00000', 'IT Project Management
+', 'Learning objective: to make diagrams with UML notation', 5, 'opqr');
 
 /*grades & grade*/
 
@@ -64,10 +78,9 @@ INSERT INTO lessonplan VALUES ('s205353', 'Frontend Development', 3, CURDATE(), 
 INSERT INTO lessonplan VALUES ('s205353', 'Frontend Development', 4, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
 INSERT INTO lessonplan VALUES ('s205353', 'Frontend Development', 5, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
 INSERT INTO lessonplan VALUES ('s205353', 'Frontend Development', 6, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
-INSERT INTO lessonplan VALUES ('s205353', 'Frontend Development', 7, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
-INSERT INTO lessonplan VALUES ('s205353', 'Frontend Development', 8, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
-INSERT INTO lessonplan VALUES ('s205353', 'Frontend Development', 9, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
-INSERT INTO lessonplan VALUES ('s205353', 'Frontend Development', 10, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
-INSERT INTO lessonplan VALUES ('s205353', 'Frontend Development', 11, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
-INSERT INTO lessonplan VALUES ('s205353', 'Frontend Development', 12, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
-INSERT INTO lessonplan VALUES ('s205353', 'Frontend Development', 13, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
+INSERT INTO lessonplan VALUES ('s205353', 'Backend Development', 1, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
+INSERT INTO lessonplan VALUES ('s205353', 'Backend Development', 2, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
+INSERT INTO lessonplan VALUES ('s205353', 'Backend Development', 3, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
+INSERT INTO lessonplan VALUES ('s205353', 'Backend Development', 4, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
+INSERT INTO lessonplan VALUES ('s205353', 'Backend Development', 5, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
+INSERT INTO lessonplan VALUES ('s205353', 'Backend Development', 6, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);

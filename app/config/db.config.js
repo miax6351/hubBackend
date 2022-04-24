@@ -3,8 +3,8 @@ module.exports = {
   USER: "gruppe09",
   PASSWORD: "gruppe09",
   DB: "studenthub",
-  DIALECT: "mariadb",
-  PORT: 3306,
+  DIALECT: "mysql"
+  //PORT: 3306,
   /*pool: {
     max: 5,
     min: 0,
