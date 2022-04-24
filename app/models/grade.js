@@ -3,9 +3,7 @@ const Grade = sequelize.define("grade", {
 
     studentId: {type: Datatypes.STRING, allowNull: false, primaryKey: true },
     courseId: { type: Datatypes.INTEGER, allowNull: false, primaryKey: true },
-    courseName: { type: Datatypes.STRING },
     gradeDK: { type: Datatypes.INTEGER},
-    InternationalGrade: { type: Datatypes.STRING},
 
   },
   {
@@ -16,7 +14,7 @@ const Grade = sequelize.define("grade", {
 
 Grade.associate = function (models) {
     models.grade.belongsTo(models.student)
-    models.grade.hasOne(models.course)
+    models.grade.belongsTo(models.course)
 }
 return Grade;
 };

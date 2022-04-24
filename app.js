@@ -46,6 +46,6 @@ app.use("/api/courseDatabase", require("./app/routes/course"));
 //student
 app.use("/api/student", require("./app/routes/student"));
 //grades
-app.use("/api/grade", require("./app/routes/grade"));
+app.use("/api/grades", require("./app/routes/grade"));
 
 module.exports = app;
