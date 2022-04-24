@@ -78,10 +78,9 @@ INSERT INTO lessonplan VALUES ('s205353', 'Frontend Development', 3, CURDATE(), 
 INSERT INTO lessonplan VALUES ('s205353', 'Frontend Development', 4, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
 INSERT INTO lessonplan VALUES ('s205353', 'Frontend Development', 5, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
 INSERT INTO lessonplan VALUES ('s205353', 'Frontend Development', 6, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
-INSERT INTO lessonplan VALUES ('s205353', 'Frontend Development', 7, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
-INSERT INTO lessonplan VALUES ('s205353', 'Frontend Development', 8, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
-INSERT INTO lessonplan VALUES ('s205353', 'Frontend Development', 9, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
-INSERT INTO lessonplan VALUES ('s205353', 'Frontend Development', 10, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
-INSERT INTO lessonplan VALUES ('s205353', 'Frontend Development', 11, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
-INSERT INTO lessonplan VALUES ('s205353', 'Frontend Development', 12, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
-INSERT INTO lessonplan VALUES ('s205353', 'Frontend Development', 13, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
+INSERT INTO lessonplan VALUES ('s205353', 'Backend Development', 1, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
+INSERT INTO lessonplan VALUES ('s205353', 'Backend Development', 2, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
+INSERT INTO lessonplan VALUES ('s205353', 'Backend Development', 3, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
+INSERT INTO lessonplan VALUES ('s205353', 'Backend Development', 4, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
+INSERT INTO lessonplan VALUES ('s205353', 'Backend Development', 5, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);
+INSERT INTO lessonplan VALUES ('s205353', 'Backend Development', 6, CURDATE(), 'Components',' How to use components', 'chapter 3-4', 28);

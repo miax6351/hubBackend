@@ -17,6 +17,7 @@ module.exports = (sequelize, Datatypes) => {
       models.course.hasMany(models.assignment)
       models.course.hasOne(models.instructor)
       models.course.hasMany(models.lesson)
+      models.course.hasMany(models.grade)
   }
 
     return Course;
