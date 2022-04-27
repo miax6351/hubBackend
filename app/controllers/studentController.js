@@ -17,6 +17,21 @@ const getAnnouncementThroughStudent = async (reg, res) => {
     res.status(200).send(student);
 }
 
+const getAllGradesThroughStudent = async (req, res) => {
+    let student = await model.student.find(
+      {
+        where: { id: req.params.id },
+
+        include: [
+          {
+          model: model.grade, 
+          attributes: ["gradeDK", "courseId"]
+          }
+        ]
+      }
+    )
+}
+
 const createStudent = async (req, res) => {
   const user ={
     id: req.body.id,
@@ -38,5 +53,6 @@ const createStudent = async (req, res) => {
 
 module.exports = {
     getAnnouncementThroughStudent,
-    createStudent
+    createStudent,
+    getAllGradesThroughStudent
 }

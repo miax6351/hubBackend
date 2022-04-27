@@ -6,4 +6,6 @@ router.get("/", studentController.getAnnouncementThroughStudent)
 
 router.post("/createStudent", studentController.createStudent)
 
+router.get("/grades:id", studentController.getAllGradesThroughStudent)
+
 module.exports = router;
