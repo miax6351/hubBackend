@@ -1,7 +1,7 @@
 module.exports = (sequelize, Datatypes) => {
 const Grade = sequelize.define("grade", {
 
-    studentId: {type: Datatypes.STRING, allowNull: false, primaryKey: true },
+    studentId: {type: Datatypes.STRING(25), allowNull: false, primaryKey: true },
     courseId: { type: Datatypes.INTEGER, allowNull: false, primaryKey: true },
     gradeDK: { type: Datatypes.INTEGER},
 
