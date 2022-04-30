@@ -1,7 +1,7 @@
 module.exports = (sequelize, Datatypes) => {
 
     const Instructor = sequelize.define("instructor", {
-      id: { type: Datatypes.STRING, allowNull: false, primaryKey: true },
+      id: { type: Datatypes.STRING(25), allowNull: false, primaryKey: true },
       firstName : { type: Datatypes.STRING, allowNull: false},
       lastName: { type: Datatypes.STRING, allowNull: false},
       mail: { type: Datatypes.STRING, allowNull: false },
