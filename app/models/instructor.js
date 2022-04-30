@@ -13,11 +13,11 @@ module.exports = (sequelize, Datatypes) => {
         timestamps: false
     });
 
-    return Instructor;
 
     Instructor.associate = function(models){
         models.instructor.belongsTo(models.course)
     }
+    return Instructor;
   };
 
 
