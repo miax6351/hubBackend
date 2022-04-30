@@ -1,4 +1,4 @@
-module.exports = (sequelize, Datatypes) => {
+/*module.exports = (sequelize, Datatypes) => {
 
     const Instructor = sequelize.define("instructor", {
       id: { type: Datatypes.STRING(25), allowNull: false, primaryKey: true },
@@ -20,4 +20,4 @@ module.exports = (sequelize, Datatypes) => {
     return Instructor;
   };
 
-
+*/
