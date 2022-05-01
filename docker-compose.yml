@@ -12,10 +12,10 @@ services:
       - $MYSQLDB_LOCAL_PORT:$MYSQLDB_DOCKER_PORT
     volumes:
       - db-data:/var/lib/mysql
-  app:
+  hubbackend:
     depends_on:
       - mariadb 
-    image: hubbackend
+    image: miasdocker/studenthub:hubbackend
     restart: unless-stopped
     env_file: ./.env
     ports:
@@ -29,6 +29,11 @@ services:
     stdin_open: true
     tty: true
     network_mode: host
-
+  client:
+    stdin_open: true
+    image: miasdocker/studenthub:client
+    volumes:
+      - /app/node_modules
+      - ./StudentHub:/app
 volumes: 
   db-data:
