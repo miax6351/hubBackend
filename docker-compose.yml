@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3.3'
 
 services:
   mariadb:
@@ -29,11 +29,5 @@ services:
     stdin_open: true
     tty: true
     network_mode: host
-  client:
-    stdin_open: true
-    image: miasdocker/studenthub:client
-    volumes:
-      - /app/node_modules
-      - ./StudentHub:/app
 volumes: 
   db-data:
