@@ -34,6 +34,7 @@ const createStudent = async (req, res) => {
   try{
     let student = await model.student.create(user);
     res.status(200).send(student);
+    
   } catch{
     return res.status(400).send({
       message: 'Unable to create student'
