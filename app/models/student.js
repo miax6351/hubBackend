@@ -17,7 +17,6 @@ module.exports = (sequelize, Datatypes) => {
 
     Student.associate = function (models) {
       models.student.hasMany(models.announcement)
-      //models.student.belongsTo(models.studentCourses)
       models.student.belongsTo(models.studyclass)
       models.student.hasOne(models.lessonplan)
     }

@@ -31,7 +31,6 @@ app.get('/', (req, res) => {
   res.json({ message: "Welcome to StudentHub" });
 });
 
-//app.use(helmet());
 //announcements
 app.use("/api/announcements", require("./app/routes/announcement"));
 //lessonplan
