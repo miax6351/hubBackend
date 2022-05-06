@@ -2,7 +2,7 @@ module.exports = (sequelize, Datatypes) => {
 
     const Student = sequelize.define("student", {
 
-      id: {type: Datatypes.STRING, allowNull: false, primaryKey: true },
+      id: {type: Datatypes.STRING(25), allowNull: false, primaryKey: true },
       firstName: { type: Datatypes.STRING, allowNull: false },
       lastName: { type: Datatypes.TEXT, allowNull: true },
       mail: { type: Datatypes.STRING, allowNull: false},
