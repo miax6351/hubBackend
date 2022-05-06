@@ -19,7 +19,7 @@ const postLessonplanRow = async (reg, res) => {
             pages: reg.body.pages
       }
     );
-    res.status(200).send(lessonPlanRow);
+    res.status(201).send(lessonPlanRow);
   } catch {
       return res.status(400).send({
           message: 'Unable to create lessonplan row'
