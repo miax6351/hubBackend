@@ -125,26 +125,12 @@ CREATE TABLE lessonplan (
   FOREIGN KEY (studentId) REFERENCES student (id)
 );
 
-show tables;
-select* from student;
-select* from instructor;
-select* from course;
-select* from grades;
-select* from grade;
-select* from studentcourses;
-select* from location;
-select* from lesson;
-select* from studyprogramme;
-select* from studyclass;
-select* from assignment;
-select* from announcement;
-select* from appointment;
 
 /*student*/
-INSERT INTO student VALUES ('s205353', 'Mia', 'Dong', 's205353@student.dtu.dk', 'D.ITØ');
-INSERT INTO student VALUES ('s205336', 'Daniel', 'Diamant', 's205336@student.dtu.dk', 'D.ITØ');
-INSERT INTO student VALUES ('s205339', 'Pelle', 'Andersen', 's205339@student.dtu.dk', 'D.ITØ');
-INSERT INTO student VALUES ('s205345', 'Sebastian', 'Sinding', 's205345@student.dtu.dk', 'D.ITØ');
+INSERT INTO student VALUES ('s205353', 'Mia', 'Dong', 's205353@student.dtu.dk', 'D.ITï¿½');
+INSERT INTO student VALUES ('s205336', 'Daniel', 'Diamant', 's205336@student.dtu.dk', 'D.ITï¿½');
+INSERT INTO student VALUES ('s205339', 'Pelle', 'Andersen', 's205339@student.dtu.dk', 'D.ITï¿½');
+INSERT INTO student VALUES ('s205345', 'Sebastian', 'Sinding', 's205345@student.dtu.dk', 'D.ITï¿½');
 INSERT INTO student VALUES ('s205456', 'Steven', 'Pedersen', 's205456@student.dtu.dk', 'D.SWT');
 
 /*instructor*/
@@ -176,20 +162,20 @@ INSERT INTO lesson VALUES ('11112', 3, 'B358',70);
 INSERT INTO lesson VALUES ('11112', 4, 'B358',70);
 
 /*studyprogramme*/
-INSERT INTO studyprogramme VALUES ('D.ITØ', 'D. IT og Økonomi');
+INSERT INTO studyprogramme VALUES ('D.ITï¿½', 'D. IT og ï¿½konomi');
 INSERT INTO studyprogramme VALUES ('D.SWT', 'D. Softwareteknologi');
 
 /*studyclass*/
 INSERT INTO studyclass VALUES ('s205353', 2020, 'D.SWT');
-INSERT INTO studyclass VALUES ('s205336', 2020, 'D.ITØ');
+INSERT INTO studyclass VALUES ('s205336', 2020, 'D.ITï¿½');
 
 /*assignments*/
 INSERT INTO assignment VALUES (1, '11112', 'https://www.google.com', CURDATE(), CURDATE());
 
 /*announcement*/
 INSERT INTO announcement VALUES ('s205353', null, 'Dartmouth Exchange Application', 'Remember to fill out your application form before the 21st of April', 'Jeppe Duus', false);
-INSERT INTO announcement VALUES ('s205353', null, 'Hegnet har fødselsdag!!', '*Stakittet fylder rundt og i den anledning inviteres der til øl og fest fra kl 8-03 fredag d. 8. april', 'Hegnet', false);
-INSERT INTO announcement VALUES ('s205339', null, 'Hegnet har fødselsdag!!', '*Stakittet fylder rundt og i den anledning inviteres der til øl og fest fra kl 8-03 fredag d. 8. april', 'Hegnet', false);
+INSERT INTO announcement VALUES ('s205353', null, 'Hegnet har fï¿½dselsdag!!', '*Stakittet fylder rundt og i den anledning inviteres der til ï¿½l og fest fra kl 8-03 fredag d. 8. april', 'Hegnet', false);
+INSERT INTO announcement VALUES ('s205339', null, 'Hegnet har fï¿½dselsdag!!', '*Stakittet fylder rundt og i den anledning inviteres der til ï¿½l og fest fra kl 8-03 fredag d. 8. april', 'Hegnet', false);
 
 
 
