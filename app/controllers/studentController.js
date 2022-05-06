@@ -3,10 +3,11 @@ const student = require("../models/student");
 const studyclass = require("../models/studyclass");
 
 
-const getAnnouncementThroughStudent = async (reg, res) => {
+const getAnnouncementThroughStudent = async (req, res) => {
+    let token = req.body.token
     let student = await model.student.findOne(
         {
-            where: { id: 's205353'},
+            where: { token: token},
 
     include: [
       {
@@ -17,13 +18,25 @@ const getAnnouncementThroughStudent = async (reg, res) => {
     res.status(200).send(student);
 }
 
+const changeToken = async (req, res) =>{
+  let id = req.params.id;
+  let token = reg.body.changeToken;
+        let student = await model.student.findOne({ where: { id: id} });
+
+        student.token = token;
+        await student.save();
+
+        res.status(200).student;
+}
+
 const createStudent = async (req, res) => {
   const user ={
     id: req.body.id,
     firstName: req.body.firstName,
     lastName: req.body.lastName,
     mail: req.body.mail,
-    studyclassId: ""
+    studyclassId: "",
+    //token: req.body.token
   }
   
   try{
@@ -38,5 +51,6 @@ const createStudent = async (req, res) => {
 
 module.exports = {
     getAnnouncementThroughStudent,
-    createStudent
+    createStudent,
+    changeToken
 }

@@ -12,7 +12,7 @@ models.sequelize.sync({force: false}).then(() => {
     console.log("yes, sync works");
    })
 
-//middelware
+//middelware https://medium.com/@dtkatz/3-ways-to-fix-the-cors-error-and-how-access-control-allow-origin-works-d97d55946d9 
 app.use(cors())
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
