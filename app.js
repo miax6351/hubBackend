@@ -15,7 +15,7 @@ models.sequelize.sync({force: false}).then(() => {
 //middelware https://medium.com/@dtkatz/3-ways-to-fix-the-cors-error-and-how-access-control-allow-origin-works-d97d55946d9 
 app.use(cors())
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "https://www.studenthub.bhsi.xyz");
+  res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
   next();
