@@ -20,12 +20,3 @@ module.exports = (sequelize, Datatypes) => {
 
     return Lesson;
   };
-/*CREATE TABLE lesson (
-    courseId int,
-    weekNo int,
-    locationBuilding varchar(25),
-    locationRoom int,
-    PRIMARY KEY (courseId, weekNo),
-    FOREIGN KEY (courseId) REFERENCES course (id),
-    FOREIGN KEY (locationBuilding, locationRoom) REFERENCES location (buildingName, roomNumber)
-  );*/
