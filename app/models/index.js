@@ -26,7 +26,7 @@ sequelize.authenticate().then(() => {
 })
 
 const db = {};
-//logic for every models.
+//logic for every models. https://medium.com/@jamesjsewell/sequelize-notes-3b57fc58078
 fs.readdirSync(__dirname)
   .filter(file => {
     return file.indexOf(".") !== 0 && file !== basename && file.slice(-3) === ".js";
