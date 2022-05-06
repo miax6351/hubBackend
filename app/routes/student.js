@@ -6,6 +6,6 @@ router.get("/", studentController.getAnnouncementThroughStudent);
 
 router.post("/createStudent", studentController.createStudent);
 
-//router.put("/changeToken", studentController.changeToken);
+router.put('/changeToken/:id', studentController.changeToken);
 
 module.exports = router;

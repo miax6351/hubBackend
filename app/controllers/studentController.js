@@ -1,31 +1,24 @@
 const model = require("../models");
-const student = require("../models/student");
-const studyclass = require("../models/studyclass");
+
 
 
 const getAnnouncementThroughStudent = async (req, res) => {
-    let token = req.body.token
-    let student = await model.student.findOne(
-        {
-            where: { token: token},
+    let token = req.body.token;
+    let student = await model.student.findOne({where: { token: JSON.stringify(token)}});
 
-    include: [
-      {
-        model: model.announcement
-      }
-    ]});
-    res.status(200).send(student);
+    let announcement = await model.announcement.findAll({where: {studentId: student.id}})
+    res.status(200).send(announcement);
 }
 
 const changeToken = async (req, res) =>{
   let id = req.params.id;
-  let token = reg.body.changeToken;
+  let idToken = req.body.token;
         let student = await model.student.findOne({ where: { id: id} });
 
-        student.token = token;
+        student.token = idToken;
         await student.save();
 
-        res.status(200).student;
+        res.status(200).send(student);
 }
 
 const createStudent = async (req, res) => {

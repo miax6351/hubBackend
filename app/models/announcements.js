@@ -17,7 +17,7 @@ module.exports = (sequelize, Datatypes) => {
     });
 
     Announcement.associate = function (models) {
-      models.announcement.belongsTo(models.student)
+      models.announcement.belongsTo(models.student , { foreignKey: 'studentId', targetKey: 'token' } );
     }
 
     return Announcement;
