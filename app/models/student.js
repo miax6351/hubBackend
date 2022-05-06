@@ -6,7 +6,8 @@ module.exports = (sequelize, Datatypes) => {
       firstName: { type: Datatypes.STRING, allowNull: false },
       lastName: { type: Datatypes.TEXT, allowNull: true },
       mail: { type: Datatypes.STRING, allowNull: false},
-      studyclassId: { type: Datatypes.STRING, allowNull: true} 
+      studyclassId: { type: Datatypes.STRING, allowNull: true},
+      token: { type: Datatypes.STRING, allowNull: false}  
 
     },
     {
