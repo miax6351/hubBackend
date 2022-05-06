@@ -7,39 +7,144 @@ INSERT INTO student VALUES ('s205456', 'Steven', 'Pedersen', 's205456@student.dt
 
 /*instructor*/
 INSERT INTO instructor VALUES ('bhsi', 'Bhupjit', 'Sing', 'bhsi@dtu.dk', 25252525);
+INSERT INTO instructor VALUES ('iabr', 'Ian', 'Bridgwood', 'iabr@dtu.dk', 35885144);
+INSERT INTO instructor VALUES ('dkru', 'Daniel', 'Rubin-Grøn', 'dkrug@dtu.dk', 21810979);
+INSERT INTO instructor VALUES ('bhch', 'Bo', 'Holst-Christensen', 'bhch@dtu.dk', 35885113);
 
 /*course*/
-INSERT INTO course VALUES ('62597', 'Backend development, operations and distributed Systems', 'Best course ever', 5, 'bhsi');
-INSERT INTO course VALUES ('62531', 'Development Methods for IT Systems', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
-INSERT INTO course VALUES ('02223', 'Model-Based Systems Engineering', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
-INSERT INTO course VALUES ('02160', 'Agile Object-oriented Software Development', 'Learning objective: to make diagrams with UML notation', 5, 'drgb');
-INSERT INTO course VALUES ('02369', 'Software Processes and Patterns
-', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
-INSERT INTO course VALUES ('62T34', 'IT Project Management
-', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
-INSERT INTO course VALUES ('00000', 'Backend development, operations and distributed Systems', 'Best course ever', 5, 'abcd');
-INSERT INTO course VALUES ('00000', 'Development Methods for IT Systems', 'Learning objective: to make diagrams with UML notation', 5, 'abcd');
-INSERT INTO course VALUES ('00000', 'Model-Based Systems Engineering', 'Learning objective: to make diagrams with UML notation', 5, 'abcd');
-INSERT INTO course VALUES ('00000', 'Agile Object-oriented Software Development', 'Learning objective: to make diagrams with UML notation', 5, 'opqr');
-INSERT INTO course VALUES ('00000', 'Software Processes and Patterns
-', 'Learning objective: to make diagrams with UML notation', 5, 'opqr');
-INSERT INTO course VALUES ('00000', 'IT Project Management
-', 'Learning objective: to make diagrams with UML notation', 5, 'opqr');
+INSERT INTO course VALUES ('02314', 'Introductory Programming', 'Fall 20', 5, 'iabr');
+INSERT INTO course VALUES ('62532', 'Version control and test methods', 'Fall 20', 5, 'dkru');
+INSERT INTO course VALUES ('62531', 'Development Methods for IT Systems', 'Fall 20', 5, 'iabr');
+INSERT INTO course VALUES ('62597', 'Backend development, operations and distributed Systems', 'Spring 22', 5, 'bhch');
+INSERT INTO course VALUES ('02223', 'Model-Based Systems Engineering', 'Spring 21', 5, 'bhsi');
+INSERT INTO course VALUES ('02160', 'Agile Object-oriented Software Development', 'Fall 21', 5, 'drgb');
+INSERT INTO course VALUES ('02369', 'Software Processes and Patterns', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
+INSERT INTO course VALUES ('62434', 'IT Project Management', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
+INSERT INTO course VALUES ('62597', 'Backend development, operations and distributed Systems', 'Spring 22', 5, 'bhch');
+INSERT INTO course VALUES ('02223', 'Model-Based Systems Engineering', 'Spring 21', 5, 'bhsi');
+INSERT INTO course VALUES ('02160', 'Agile Object-oriented Software Development', 'Fall 21', 5, 'drgb');
+INSERT INTO course VALUES ('02369', 'Software Processes and Patterns', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
+INSERT INTO course VALUES ('62434', 'IT Project Management', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
 
 /*grades & grade*/
-
 INSERT INTO grades VALUES (12, 'A');
-INSERT INTO grade VALUES ('s205339', 12, '11112');
+INSERT INTO grades VALUES (10, 'B');
+INSERT INTO grades VALUES (07, 'C');
+INSERT INTO grades VALUES (04, 'D');
+INSERT INTO grades VALUES (02, 'E');
+INSERT INTO grades VALUES (00, 'Fx');
+INSERT INTO grades VALUES (-03, 'F');
+
+INSERT INTO course VALUES ('02314', 'Introductory Programming', 'Fall 20', 5, 'iabr');
+INSERT INTO course VALUES ('62532', 'Version control and test methods', 'Fall 20', 5, 'dkru');
+INSERT INTO course VALUES ('62531', 'Development Methods for IT Systems', 'Fall 20', 5, 'iabr');
+INSERT INTO course VALUES ('62597', 'Backend development, operations and distributed Systems', 'Spring 22', 5, 'bhch');
+INSERT INTO course VALUES ('02223', 'Model-Based Systems Engineering', 'Spring 21', 5, 'bhsi');
+INSERT INTO course VALUES ('02160', 'Agile Object-oriented Software Development', 'Fall 21', 5, 'drgb');
+INSERT INTO course VALUES ('02369', 'Software Processes and Patterns', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
+INSERT INTO course VALUES ('62434', 'IT Project Management', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
+INSERT INTO course VALUES ('62597', 'Backend development, operations and distributed Systems', 'Spring 22', 5, 'bhch');
+INSERT INTO course VALUES ('02223', 'Model-Based Systems Engineering', 'Spring 21', 5, 'bhsi');
+INSERT INTO course VALUES ('02160', 'Agile Object-oriented Software Development', 'Fall 21', 5, 'drgb');
+INSERT INTO course VALUES ('02369', 'Software Processes and Patterns', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
+INSERT INTO course VALUES ('62434', 'IT Project Management', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
+
+INSERT INTO grade VALUES ('s205353', 12, '02314');
+INSERT INTO grade VALUES ('s205353', 12, '62532');
+INSERT INTO grade VALUES ('s205353', 12, '62531');
+INSERT INTO grade VALUES ('s205353', 12, '62597');
+INSERT INTO grade VALUES ('s205353', 12, '02223');
+INSERT INTO grade VALUES ('s205353', 12, '02160');
+INSERT INTO grade VALUES ('s205353', 12, '02369');
+INSERT INTO grade VALUES ('s205353', 12, '62434');
+
+INSERT INTO grade VALUES ('s205336', 12, '02314');
+INSERT INTO grade VALUES ('s205336', 12, '62532');
+INSERT INTO grade VALUES ('s205336', 12, '62531');
+INSERT INTO grade VALUES ('s205336', 12, '62597');
+INSERT INTO grade VALUES ('s205336', 12, '02223');
+INSERT INTO grade VALUES ('s205336', 12, '02160');
+INSERT INTO grade VALUES ('s205336', 12, '02369');
+INSERT INTO grade VALUES ('s205336', 12, '62434');
+
+INSERT INTO grade VALUES ('s205339', 12, '02314');
+INSERT INTO grade VALUES ('s205339', 12, '62532');
+INSERT INTO grade VALUES ('s205339', 12, '62531');
+INSERT INTO grade VALUES ('s205339', 12, '62597');
+INSERT INTO grade VALUES ('s205339', 12, '02223');
+INSERT INTO grade VALUES ('s205339', 12, '02160');
+INSERT INTO grade VALUES ('s205339', 12, '02369');
+INSERT INTO grade VALUES ('s205339', 12, '62434');
+
+INSERT INTO grade VALUES ('s205345', 12, '02314');
+INSERT INTO grade VALUES ('s205345', 12, '62532');
+INSERT INTO grade VALUES ('s205345', 12, '62531');
+INSERT INTO grade VALUES ('s205345', 12, '62597');
+INSERT INTO grade VALUES ('s205345', 12, '02223');
+INSERT INTO grade VALUES ('s205345', 12, '02160');
+INSERT INTO grade VALUES ('s205345', 12, '02369');
+INSERT INTO grade VALUES ('s205345', 12, '62434');
+
+INSERT INTO grade VALUES ('s205456', 12, '02314');
+INSERT INTO grade VALUES ('s205456', 12, '62532');
+INSERT INTO grade VALUES ('s205456', 12, '62531');
+INSERT INTO grade VALUES ('s205456', 12, '62597');
+INSERT INTO grade VALUES ('s205456', 12, '02223');
+INSERT INTO grade VALUES ('s205456', 12, '02160');
+INSERT INTO grade VALUES ('s205456', 12, '02369');
+INSERT INTO grade VALUES ('s205456', 12, '62434');
 
 /*studentCourses*/
-INSERT INTO studentCourses VALUES ('s205339', '11112');
-INSERT INTO studentCourses VALUES ('s205339', '010101');
+INSERT INTO studentCourses VALUES ('s205353', '02314');
+INSERT INTO studentCourses VALUES ('s205353', '62532');
+INSERT INTO studentCourses VALUES ('s205353', '62531');
+INSERT INTO studentCourses VALUES ('s205353', '62597');
+INSERT INTO studentCourses VALUES ('s205353', '02223');
+INSERT INTO studentCourses VALUES ('s205353', '02160');
+INSERT INTO studentCourses VALUES ('s205353', '02369');
+INSERT INTO studentCourses VALUES ('s205353', '62434');
+
+INSERT INTO studentCourses VALUES ('s205336', '02314');
+INSERT INTO studentCourses VALUES ('s205336', '62532');
+INSERT INTO studentCourses VALUES ('s205336', '62531');
+INSERT INTO studentCourses VALUES ('s205336', '62597');
+INSERT INTO studentCourses VALUES ('s205336', '02223');
+INSERT INTO studentCourses VALUES ('s205336', '02160');
+INSERT INTO studentCourses VALUES ('s205336', '02369');
+INSERT INTO studentCourses VALUES ('s205336', '62434');
+
+INSERT INTO studentCourses VALUES ('s205339', '02314');
+INSERT INTO studentCourses VALUES ('s205339', '62532');
+INSERT INTO studentCourses VALUES ('s205339', '62531');
+INSERT INTO studentCourses VALUES ('s205339', '62597');
+INSERT INTO studentCourses VALUES ('s205339', '02223');
+INSERT INTO studentCourses VALUES ('s205339', '02160');
+INSERT INTO studentCourses VALUES ('s205339', '02369');
+INSERT INTO studentCourses VALUES ('s205339', '62434');
+
+INSERT INTO studentCourses VALUES ('s205345', '02314');
+INSERT INTO studentCourses VALUES ('s205345', '62532');
+INSERT INTO studentCourses VALUES ('s205345', '62531');
+INSERT INTO studentCourses VALUES ('s205345', '62597');
+INSERT INTO studentCourses VALUES ('s205345', '02223');
+INSERT INTO studentCourses VALUES ('s205345', '02160');
+INSERT INTO studentCourses VALUES ('s205345', '02369');
+INSERT INTO studentCourses VALUES ('s205345', '62434');
+
+INSERT INTO studentCourses VALUES ('s205456', '02314');
+INSERT INTO studentCourses VALUES ('s205456', '62532');
+INSERT INTO studentCourses VALUES ('s205456', '62531');
+INSERT INTO studentCourses VALUES ('s205456', '62597');
+INSERT INTO studentCourses VALUES ('s205456', '02223');
+INSERT INTO studentCourses VALUES ('s205456', '02160');
+INSERT INTO studentCourses VALUES ('s205456', '02369');
+INSERT INTO studentCourses VALUES ('s205456', '62434');
 
 /*location*/
-INSERT INTO location VALUES ('B358', 70);
-INSERT INTO location VALUES ('B358', 60);
-INSERT INTO location VALUES ('B358', 50);
-INSERT INTO location VALUES ('B358', 40);
+INSERT INTO location VALUES ('358', 70);
+INSERT INTO location VALUES ('303A', 42);
+INSERT INTO location VALUES ('V1.01', 50);
+INSERT INTO location VALUES ('X1.20', 40);
 
 /*lesson*/
 INSERT INTO lesson VALUES ('11112', 1, 'B358',70);
@@ -62,8 +167,6 @@ INSERT INTO assignment VALUES (1, '11112', 'https://www.google.com', CURDATE(), 
 INSERT INTO announcement VALUES ('s205353', null, 'Dartmouth Exchange Application', 'Remember to fill out your application form before the 21st of April', 'Jeppe Duus', false);
 INSERT INTO announcement VALUES ('s205353', null, 'Hegnet har fødselsdag!!', '*Stakittet fylder rundt og i den anledning inviteres der til øl og fest fra kl 8-03 fredag d. 8. april', 'Hegnet', false);
 INSERT INTO announcement VALUES ('s205339', null, 'Hegnet har fødselsdag!!', '*Stakittet fylder rundt og i den anledning inviteres der til øl og fest fra kl 8-03 fredag d. 8. april', 'Hegnet', false);
-
-
 
 /*appointment*/
 INSERT INTO appointment VALUES ('s205353', null, CURDATE(), CURDATE(),'Dentists appointment',  null);
