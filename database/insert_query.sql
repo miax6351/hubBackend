@@ -1,9 +1,9 @@
 /*student*/
-INSERT INTO student VALUES ('s205353', 'Mia', 'Dong', 's205353@student.dtu.dk', 'D.ITØ');
-INSERT INTO student VALUES ('s205336', 'Daniel', 'Diamant', 's205336@student.dtu.dk', 'D.ITØ');
-INSERT INTO student VALUES ('s205339', 'Pelle', 'Andersen', 's205339@student.dtu.dk', 'D.ITØ');
-INSERT INTO student VALUES ('s205345', 'Sebastian', 'Sinding', 's205345@student.dtu.dk', 'D.ITØ');
-INSERT INTO student VALUES ('s205456', 'Steven', 'Pedersen', 's205456@student.dtu.dk', 'D.SWT');
+INSERT INTO student VALUES ('s205353', 'Mia', 'Dong', 's205353@student.dtu.dk', 'D.ITØ', '');
+INSERT INTO student VALUES ('s205336', 'Daniel', 'Diamant', 's205336@student.dtu.dk', 'D.ITØ', '');
+INSERT INTO student VALUES ('s205339', 'Pelle', 'Andersen', 's205339@student.dtu.dk', 'D.ITØ'. '');
+INSERT INTO student VALUES ('s205345', 'Sebastian', 'Sinding', 's205345@student.dtu.dk', 'D.ITØ', '');
+INSERT INTO student VALUES ('s205456', 'Steven', 'Pedersen', 's205456@student.dtu.dk', 'D.SWT', '');
 
 /*instructor*/
 INSERT INTO instructor VALUES ('bhsi', 'Bhupjit', 'Sing', 'bhsi@dtu.dk', 25252525);
