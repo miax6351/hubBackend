@@ -11,8 +11,7 @@ const getAnnouncementThroughStudent = async (req, res) => {
 
     include: [
       {
-        model: model.announcement,
-        attributes: ["title"]
+        model: model.announcement
       }
     ]});
     res.status(200).send(student);

@@ -4,6 +4,8 @@ const router = require("express").Router();
 
 router.get('/', gradeController.getAllGrades);
 
+router.get('/getGrade', gradeController.getOneGrade);
+
 
 
 

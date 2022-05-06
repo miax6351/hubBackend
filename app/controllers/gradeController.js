@@ -13,6 +13,13 @@ const student = require("../models/student");
         res.status(200).send(grades);
     }
 
+    const getOneGrade = async (req, res) =>{
+        let id = "s205339"
+        let grade = await model.grade.findOne({ where: {id: id} });
+        res.status(200).send(grade);
+    }
+
     module.exports = {
         getAllGrades,
+        getOneGrade
     }
