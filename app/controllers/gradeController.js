@@ -13,13 +13,17 @@ const student = require("../models/student");
         res.status(200).send(grades);
     }
 
-    const getOneGrade = async (req, res) =>{
-        let id = "s205339"
-        let grade = await model.grade.findOne({ where: {id: id} });
+    const getGrades = async (req, res) =>{
+        let token = req.params.token;
+        let student = await model.student.findOne({ where: {token: token} });
+
+        let grade = await model.grade.findAll(
+            {where: {studentId: student.id}}
+            )
         res.status(200).send(grade);
     }
 
     module.exports = {
         getAllGrades,
-        getOneGrade
+        getGrades
     }

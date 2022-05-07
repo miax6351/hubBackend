@@ -1,4 +1,4 @@
-const helmet = require("helmet");
+const helmet = require("helmet")
 const models = require("./app/models");
 const express = require("express");
 const cors = require("cors");

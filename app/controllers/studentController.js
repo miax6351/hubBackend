@@ -3,9 +3,9 @@ const model = require("../models");
 
 
 const getAnnouncementThroughStudent = async (req, res) => {
-    let token = req.body.token;
-    let student = await model.student.findOne({where: { token: JSON.stringify(token)}});
-
+    const token = req.params.token;
+    let student = await model.student.findOne({where: { token: token}});
+    
     let announcement = await model.announcement.findAll({where: {studentId: student.id}})
     res.status(200).send(announcement);
 }
