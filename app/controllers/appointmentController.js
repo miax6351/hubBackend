@@ -17,7 +17,7 @@ const postAppointment = async (reg, res) => {
         courseId: reg.body.courseId
       }
     );
-    res.status(201).send(appointment);
+    res.status(200).send(appointment);
   } catch {
       return res.status(400).send({
           message: 'Unable to create appointment'
