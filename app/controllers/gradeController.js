@@ -16,7 +16,7 @@ const student = require("../models/student");
     const getGrades = async (req, res) =>{
         let token = req.params.token;
         let student = await model.student.findOne({ where: {token: token} });
-
+        console.log(student.id);
         let grade = await model.grade.findAll({
             where: {studentId: student.id},
             include: model.course

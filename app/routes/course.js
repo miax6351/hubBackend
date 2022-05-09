@@ -2,7 +2,7 @@ const courseController = require("../controllers/courseController");
 const router = require("express").Router();
 
 
-router.get('/', courseController.getAllCourses);
+router.get('/:token', courseController.getAllCourses);
 
 
 module.exports = router;
