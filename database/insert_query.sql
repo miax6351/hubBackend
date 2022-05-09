@@ -115,6 +115,9 @@ INSERT INTO announcement VALUES ('s205339', null, 'Hegnet har fødselsdag!!', 'l
 INSERT INTO announcement VALUES ('s205339', null, 'Hegnet har fødselsdag!!', 'Hello Mario', 'Hegnet', false);
 INSERT INTO announcement VALUES ('s205339', null, 'Hegnet har fødselsdag!!', 'we are group 9 i think', 'Hegnet', false);
 INSERT INTO announcement VALUES ('s205339', null, 'Hegnet har fødselsdag!!', 'we made an announcement page', 'Hegnet', false);
+INSERT INTO announcement VALUES ('s205345', null, 'Hegnet har fødselsdag!!', 'These are the announcements for a different user', false);
+INSERT INTO announcement VALUES ('s205345', null, 'Hegnet har fødselsdag!!', 'so is this', 'Hegnet', false);
+INSERT INTO announcement VALUES ('s205345', null, 'Hegnet har fødselsdag!!', 'Help!!! i was turned into an announcement', 'Hegnet', false);
 
 
 /*appointment*/
