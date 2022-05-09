@@ -1,6 +1,10 @@
 const model = require("../models");
 
-
+const getStudentInformation = async (req, res) => {
+  const token = req.params.token;
+    let student = await model.student.findOne({where: { token: token}});
+    res.status(200).send(student);
+}
 
 const getAnnouncementThroughStudent = async (req, res) => {
     const token = req.params.token;
@@ -45,5 +49,6 @@ const createStudent = async (req, res) => {
 module.exports = {
     getAnnouncementThroughStudent,
     createStudent,
-    changeToken
+    changeToken,
+    getStudentInformation
 }
