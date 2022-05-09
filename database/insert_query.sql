@@ -11,20 +11,6 @@ INSERT INTO instructor VALUES ('iabr', 'Ian', 'Bridgwood', 'iabr@dtu.dk', 358851
 INSERT INTO instructor VALUES ('dkru', 'Daniel', 'Rubin-Grøn', 'dkrug@dtu.dk', 21810979);
 INSERT INTO instructor VALUES ('bhch', 'Bo', 'Holst-Christensen', 'bhch@dtu.dk', 35885113);
 
-/*course*/
-INSERT INTO course VALUES ('02314', 'Introductory Programming', 'Fall 20', 5, 'iabr');
-INSERT INTO course VALUES ('62532', 'Version control and test methods', 'Fall 20', 5, 'dkru');
-INSERT INTO course VALUES ('62531', 'Development Methods for IT Systems', 'Fall 20', 5, 'iabr');
-INSERT INTO course VALUES ('62597', 'Backend development, operations and distributed Systems', 'Spring 22', 5, 'bhch');
-INSERT INTO course VALUES ('02223', 'Model-Based Systems Engineering', 'Spring 21', 5, 'bhsi');
-INSERT INTO course VALUES ('02160', 'Agile Object-oriented Software Development', 'Fall 21', 5, 'drgb');
-INSERT INTO course VALUES ('02369', 'Software Processes and Patterns', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
-INSERT INTO course VALUES ('62434', 'IT Project Management', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
-INSERT INTO course VALUES ('62597', 'Backend development, operations and distributed Systems', 'Spring 22', 5, 'bhch');
-INSERT INTO course VALUES ('02223', 'Model-Based Systems Engineering', 'Spring 21', 5, 'bhsi');
-INSERT INTO course VALUES ('02160', 'Agile Object-oriented Software Development', 'Fall 21', 5, 'drgb');
-INSERT INTO course VALUES ('02369', 'Software Processes and Patterns', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
-INSERT INTO course VALUES ('62434', 'IT Project Management', 'Learning objective: to make diagrams with UML notation', 5, 'bhsi');
 
 /*grades & grade*/
 INSERT INTO grades VALUES (12, 'A');
