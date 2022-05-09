@@ -106,7 +106,16 @@ INSERT INTO assignment VALUES (1, '11112', 'https://www.google.com', CURDATE(), 
 /*announcement*/
 INSERT INTO announcement VALUES ('s205353', null, 'Dartmouth Exchange Application', 'Remember to fill out your application form before the 21st of April', 'Jeppe Duus', false);
 INSERT INTO announcement VALUES ('s205353', null, 'Hegnet har fødselsdag!!', '*Stakittet fylder rundt og i den anledning inviteres der til øl og fest fra kl 8-03 fredag d. 8. april', 'Hegnet', false);
-INSERT INTO announcement VALUES ('s205339', null, 'Hegnet har fødselsdag!!', '*Stakittet fylder rundt og i den anledning inviteres der til øl og fest fra kl 8-03 fredag d. 8. april', 'Hegnet', false);
+INSERT INTO announcement VALUES ('s205339', null, 'Hegnet har fødselsdag!!', 'This is an announcement', 'Hegnet', false);
+INSERT INTO announcement VALUES ('s205339', null, 'Hegnet har fødselsdag!!', 'this is also an announcement', 'Hegnet', false);
+INSERT INTO announcement VALUES ('s205339', null, 'Hegnet har fødselsdag!!', 'this too', 'Hegnet', false);
+INSERT INTO announcement VALUES ('s205339', null, 'Hegnet har fødselsdag!!', 'announcement.', false);
+INSERT INTO announcement VALUES ('s205339', null, 'Hegnet har fødselsdag!!', 'get your announcements here', 'Hegnet', false);
+INSERT INTO announcement VALUES ('s205339', null, 'Hegnet har fødselsdag!!', 'look at me im an announcement', 'Hegnet', false);
+INSERT INTO announcement VALUES ('s205339', null, 'Hegnet har fødselsdag!!', 'Hello Mario', 'Hegnet', false);
+INSERT INTO announcement VALUES ('s205339', null, 'Hegnet har fødselsdag!!', 'we are group 9 i think', 'Hegnet', false);
+INSERT INTO announcement VALUES ('s205339', null, 'Hegnet har fødselsdag!!', 'we made an announcement page', 'Hegnet', false);
+
 
 /*appointment*/
 INSERT INTO appointment VALUES ('s205353', null, CURDATE(), CURDATE(),'Dentists appointment',  null);
