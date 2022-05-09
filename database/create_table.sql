@@ -94,7 +94,7 @@ CREATE TABLE announcement (
   studentId varchar(50),
   id int AUTO_INCREMENT,
   title varchar(50),
-  message varchar(50),
+  message varchar(150),
   sender varchar(50),
   isRead boolean,
   PRIMARY KEY (studentId, id),
