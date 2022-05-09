@@ -17,17 +17,6 @@ const getAnnouncementThroughStudent = async (req, res) => {
 const changeToken = async (req, res) =>{
   let id = req.params.id;
   let idToken = req.body.token;
-  console.log('ffafsdef')
-        let student = await model.student.findOne({ where: { id: id} });
-        student.token = idToken;
-        await student.save();
-        console.log('efter')
-        res.status(200).send(student);
-}
-
-const changeToken = async (req, res) =>{
-  let id = req.params.id;
-  let idToken = req.body.token;
         let student = await model.student.findOne({ where: { id: id} });
 
         student.token = idToken;
