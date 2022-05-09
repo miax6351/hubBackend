@@ -18,7 +18,7 @@ CREATE TABLE instructor (
 
 CREATE TABLE course (
   id varchar(10) PRIMARY KEY,
-  courseName varchar(50),
+  courseName varchar(200),
   courseDescription varchar(100),
   ects varchar(50),
   instructorId varchar(50),
