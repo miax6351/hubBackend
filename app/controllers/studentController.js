@@ -2,19 +2,29 @@ const model = require("../models");
 const student = require("../models/student");
 const studyclass = require("../models/studyclass");
 
-
-const getAnnouncementThroughStudent = async (reg, res) => {
-    let student = await model.student.findOne(
-        {
-            where: { id: 's205353'},
-
-    include: [
-      {
-        model: model.announcement,
-        attributes: ["title"]
-      }
-    ]});
+const getStudentInformation = async (req, res) => {
+  const token = req.params.token;
+    let student = await model.student.findOne({where: { token: token}});
     res.status(200).send(student);
+}
+
+const getAnnouncementThroughStudent = async (req, res) => {
+    const token = req.params.token;
+    let student = await model.student.findOne({where: { token: token}});
+    
+    let announcement = await model.announcement.findAll({where: {studentId: student.id}})
+    res.status(200).send(announcement);
+}
+
+const changeToken = async (req, res) =>{
+  let id = req.params.id;
+  let idToken = req.body.token;
+  console.log('ffafsdef')
+        let student = await model.student.findOne({ where: { id: id} });
+        student.token = idToken;
+        await student.save();
+        console.log('efter')
+        res.status(200).send(student);
 }
 
 const createStudent = async (req, res) => {
@@ -38,5 +48,7 @@ const createStudent = async (req, res) => {
 
 module.exports = {
     getAnnouncementThroughStudent,
-    createStudent
+    createStudent,
+    changeToken,
+    getStudentInformation
 }
