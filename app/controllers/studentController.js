@@ -1,4 +1,5 @@
 const model = require("../models");
+const student = require("../models/student");
 
 const getStudentInformation = async (req, res) => {
   const token = req.params.token;
@@ -12,6 +13,14 @@ const getAnnouncementThroughStudent = async (req, res) => {
     
     let announcement = await model.announcement.findAll({where: {studentId: student.id}})
     res.status(200).send(announcement);
+}
+
+const getLessonPlanThroughStudent = async (req, res) => {
+  const token = req.params.token;
+  let student = await model.student.findOne({where: { token: token}});
+  
+  let lessonplan = await model.lessonplan.findAll({where: {studentId: student.id}})
+  res.status(200).send(lessonplan);
 }
 
 const changeToken = async (req, res) =>{
@@ -50,5 +59,6 @@ module.exports = {
     getAnnouncementThroughStudent,
     createStudent,
     changeToken,
-    getStudentInformation
+    getStudentInformation,
+    getLessonPlanThroughStudent
 }
