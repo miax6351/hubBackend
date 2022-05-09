@@ -1,4 +1,4 @@
-const helmet = require("helmet");
+const helmet = require("helmet")
 const models = require("./app/models");
 const express = require("express");
 const cors = require("cors");
@@ -12,7 +12,7 @@ models.sequelize.sync({force: false}).then(() => {
     console.log("yes, sync works");
    })
 
-//middelware
+//middelware https://medium.com/@dtkatz/3-ways-to-fix-the-cors-error-and-how-access-control-allow-origin-works-d97d55946d9 
 app.use(cors())
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
@@ -31,16 +31,12 @@ app.get('/', (req, res) => {
   res.json({ message: "Welcome to StudentHub" });
 });
 
-
-//app.use(helmet());
 //announcements
 app.use("/api/announcements", require("./app/routes/announcement"));
 //lessonplan
 app.use("/api/lessonplan", require("./app/routes/lessonplan"));
-app.use("/api/lessonplan/postLessonplanRow", require("./app/routes/lessonplan"));
 //appointment
 app.use("/api/appointment", require("./app/routes/appointment"));
-app.use("/api/appointment/postAppointment", require("./app/routes/appointment"));
 //courseDatabase
 app.use("/api/courseDatabase", require("./app/routes/course"));
 //student

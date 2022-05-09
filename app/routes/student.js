@@ -5,6 +5,8 @@ const router = require("express").Router();
 router.get("/:token/announcements", studentController.getAnnouncementThroughStudent);
 router.get("/:token", studentController.getStudentInformation);
 
-router.post("/createStudent", studentController.createStudent)
+router.post("/createStudent", studentController.createStudent);
+
+router.put('/changeToken/:id', studentController.changeToken);
 
 module.exports = router;

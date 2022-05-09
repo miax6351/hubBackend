@@ -19,11 +19,3 @@ module.exports = (sequelize, Datatypes) => {
 
     return Studyclass;
   };
-
-/*CREATE TABLE studyclass (
-    id varchar(25) PRIMARY KEY,
-    semester varchar(25),
-    programmeId varchar(25),
-    FOREIGN KEY (programmeId) REFERENCES studyprogramme (programmeId),
-    FOREIGN KEY (id) REFERENCES student (id)
-  );*/
